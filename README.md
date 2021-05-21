@@ -4,8 +4,8 @@
 Snøhetta Next JS Boilerplate with `eslint`, `prettier` and `path aliases`.
 
 ## Stack
-* [Next JS](https://nextjs.org/docs) `Version 10.0.7`
-* [Sass (SCSS)](https://sass-lang.com/) `Version 6.0.0`
+* [Next JS](https://nextjs.org/docs) 
+* [Sass (SCSS)](https://sass-lang.com/) 
 
 ## Project set-up
 
@@ -13,8 +13,17 @@ Snøhetta Next JS Boilerplate with `eslint`, `prettier` and `path aliases`.
     cd boilerplate-nextjs
     npm install
 
+To use it as boilerplate for another project:
+
+    git remote remove origin
+    git remote add origin new_github_repo_url
+    git push -u origin main
+
+    
+
+
 ## Configurations
-* **ESlint**
+**ESlint**
 
 > ESLint is a tool for identifying and reporting on patterns found in
 > ECMAScript/JavaScript code, with the goal of making code more
@@ -22,21 +31,20 @@ Snøhetta Next JS Boilerplate with `eslint`, `prettier` and `path aliases`.
 
 Configs can be found in `.eslintrc.js` in the project root.
 
-* **Prettier**
+ **Prettier**
 
 > Prettier is an opinionated code formatter with support for JS, SCSS,
 > CSS, JSX...
 
 Configs can be found in `.prettierrc` in the project root.
 
-* **Path Alias**
+ **Path Alias**
 
 > Path aliasing or aliases are preconfigured names used to replace long
 > **paths** in files and resolve to certain directories on a codebase.
 
 This project uses `@` for imports. `@/components/example.js` 
 
-This project uses [husky](https://github.com/typicode/husky) to ensure code consistency.
 
 
 
