@@ -4,8 +4,8 @@
 Snøhetta Next JS Boilerplate with `eslint`, `prettier` and `path aliases`.
 
 ## Stack
-* [Next JS](https://nextjs.org/docs) 
-* [Sass (SCSS)](https://sass-lang.com/) 
+* [Next JS](https://nextjs.org/docs) `Version 10.0.7`
+* [Sass (SCSS)](https://sass-lang.com/) `Version 6.0.0`
 
 ## Project set-up
 
