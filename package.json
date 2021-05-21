@@ -10,16 +10,13 @@
     "lint:fix": "npm run lint -- --fix",
     "prettier:write": "prettier --write",
     "prettier:check": "prettier --check",
-    "typecheck": "tsc --noEmit"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+    "typecheck": "tsc --noEmit",
+    "prepare": "husky install"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
-      "npm run lint:fix"
+      "npm run lint:fix",
+      "eslint --cache --fix"
     ]
   },
   "dependencies": {
