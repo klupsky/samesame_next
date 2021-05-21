@@ -14,12 +14,15 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "prettier --check . && git add -A ."
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
-    "*.{js,jsx}": [
-      "eslint '*/**/*.{js,jsx}' --fix"
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "npm run lint:fix"
+    ],
+    "src/**/*.{json,md,css,scss,less}": [
+      "npm run format"
     ]
   },
   "dependencies": {
