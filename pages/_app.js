@@ -1,9 +1,10 @@
-import '@/styles/globals.scss';
+import { GlobalStyles } from '@/styles/GlobalStyles';
 import { DefaultSeo } from 'next-seo';
 
 const pageTitle = 'Your page title';
 const pageDescription = 'Your page description';
 
+// Default SEO goes here:
 const defaultSeo = {
    title: pageTitle,
    description: pageDescription,
@@ -22,6 +23,7 @@ const defaultSeo = {
 function MyApp({ Component, pageProps }) {
    return (
       <>
+         <GlobalStyles />
          <DefaultSeo {...defaultSeo} />
          <Component {...pageProps} />
       </>
