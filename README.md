@@ -21,8 +21,8 @@ Snøhetta Next.js Boilerplate with `eslint`, `prettier`, `path aliases` and `sty
 
     git clone https://github.com/Snohetta/nextjs-boilerplate.git
     
-    cd boilerplate-nextjs
-    
+    cd nextjs-boilerplate
+
     npm install
 
   
