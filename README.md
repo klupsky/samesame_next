@@ -82,7 +82,11 @@ Configs can be found in `.prettierrc` in the project root.
 This project uses `@` for imports. `@/components/example.js`
 
 
-  
+## Dependency Versions
+
+Next.js: `10.2.2`
+React + DOM: `17.0.2`
+Node: `v14.16.0`
 
 ## Authors
 
