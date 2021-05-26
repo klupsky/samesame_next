@@ -51,11 +51,7 @@ To use it as boilerplate for another project:
 
   
 
-> ESLint is a tool for identifying and reporting on patterns found in
-
-> ECMAScript/JavaScript code, with the goal of making code more
-
-> consistent and avoiding bugs.
+> ESLint is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code, with the goal of making code more consistent and avoiding bugs.
 
   
 
@@ -67,9 +63,7 @@ Configs can be found in `.eslintrc.js` in the project root.
 
   
 
-> Prettier is an opinionated code formatter with support for JS, SCSS,
-
-> CSS, JSX...
+> Prettier is an opinionated code formatter with support for JS, SCSS, CSS, JSX...
 
   
 
@@ -81,17 +75,13 @@ Configs can be found in `.prettierrc` in the project root.
 
   
 
-> Path aliasing or aliases are preconfigured names used to replace long
-
-> **paths** in files and resolve to certain directories on a codebase.
+> Path aliasing or aliases are preconfigured names used to replace long **paths** in files and resolve to certain directories on a codebase.
 
   
 
 This project uses `@` for imports. `@/components/example.js`
 
-  
-  
-  
+
   
 
 ## Authors
