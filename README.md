@@ -2,13 +2,13 @@
 
   
 
-Snøhetta Next JS Boilerplate with `eslint`, `prettier` and `path aliases`.
+Snøhetta Next.js Boilerplate with `eslint`, `prettier`, `path aliases` and `styled components`.
 
   
 
 ## Stack
 
-* [Next JS](https://nextjs.org/docs)
+* [Next.js](https://nextjs.org/docs)
 
 * [Sass (SCSS)](https://sass-lang.com/)
 * [Styled Components](https://styled-components.com/docs/basics#getting-started)
