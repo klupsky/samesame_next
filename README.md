@@ -1,6 +1,3 @@
-
-  
-
 # Snøhetta Boilerplate
 
   
