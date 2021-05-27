@@ -8,6 +8,11 @@ const CustomStyles = createGlobalStyle`
   box-sizing: border-box;
 }
 
+/* Define global variables here */
+:root {
+  --primaryColor: blue;
+}
+
 html,
 body {
   padding: 0;

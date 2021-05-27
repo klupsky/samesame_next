@@ -1,6 +1,9 @@
 import { GlobalStyles } from '@/styles/GlobalStyles';
 import { DefaultSeo } from 'next-seo';
 
+// Import the theme across the whole app so it can be used in every component
+import Theme from '@/styles/Theme';
+
 const pageTitle = 'Your page title';
 const pageDescription = 'Your page description';
 
@@ -25,7 +28,9 @@ function MyApp({ Component, pageProps }) {
       <>
          <GlobalStyles />
          <DefaultSeo {...defaultSeo} />
-         <Component {...pageProps} />
+         <Theme>
+            <Component {...pageProps} />
+         </Theme>
       </>
    );
 }
