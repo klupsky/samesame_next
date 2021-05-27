@@ -3,6 +3,7 @@ import { DefaultSeo } from 'next-seo';
 
 // Import the theme across the whole app so it can be used in every component
 import Theme from '@/styles/Theme';
+import '@/styles/fonts.css';
 
 const pageTitle = 'Your page title';
 const pageDescription = 'Your page description';
