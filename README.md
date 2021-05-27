@@ -43,7 +43,8 @@ To use it as boilerplate for another project:
 * [Documentation](https://styled-components.com/docs)
 * [Best practice](https://www.joshwcomeau.com/css/styled-components/)
 
-
+This boilerplate includes various concepts of styled components. It's free to decide what to use and what can be omitted. 
+Concepts such as: `Theming`, `CSS Variables in styled components`, `base styles`, `utlities`.
 
 ## Configurations
 

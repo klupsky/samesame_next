@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 import { device } from '@/styles/BreakPoints';
+import { Headline } from '@/styles/BaseStyles';
 
 export default function Home() {
    return (
       <div>
+         <Headline>I'm a headline</Headline>
          <Paragraph>Hello World</Paragraph>
       </div>
    );
