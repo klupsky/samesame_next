@@ -30,7 +30,7 @@ module.exports = {
       'arrow-body-style': 'off',
       'prettier/prettier': ['error', {}, { usePrettierrc: true }]
    },
-   parser: 'babel-eslint',
+   parser: '@babel/eslint-parser',
    settings: {
       'import/resolver': {
          alias: {
