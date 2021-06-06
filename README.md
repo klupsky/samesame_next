@@ -1,8 +1,8 @@
-# Snøhetta Boilerplate
+# Same Same Studio Boilerplate
 
   
 
-Snøhetta Next.js Boilerplate with `eslint`, `prettier`, `path aliases` and `styled components`.
+Same Same Studio Next.js Boilerplate with `eslint`, `prettier`, `path aliases` and `styled components`.
 
   
 
@@ -19,9 +19,9 @@ Snøhetta Next.js Boilerplate with `eslint`, `prettier`, `path aliases` and `sty
 
   
 
-    git clone https://github.com/Snohetta/nextjs-boilerplate.git
+    git clone https://github.com/samesamestudio/samesame-starter.git
     
-    cd nextjs-boilerplate
+    cd samesame-starter
 
     npm install
 
