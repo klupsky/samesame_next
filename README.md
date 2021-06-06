@@ -132,6 +132,7 @@ Go to the github repo and greate a new **Pull Request**. Add your changes and is
 If the Pull Request fixes the issue, then merge it into  `main`  or  `staging`  (if available).
 
 ***Imporant***
+
 **Don't forget to link the correct issues from github or clickup to keep track of done tasks!**
 
 ----------
@@ -159,6 +160,7 @@ It also lets you **disable** rules if it's not needed for the file.
     You might have to install eslint globally and in your code editor.
 
 **Importing modules with path-alias:**
+
 `import { GlobalStyles } from  '@/styles/GlobalStyles';`
 ___
 ##### Further reading:
