@@ -1,13 +1,22 @@
+import { NextSeo } from 'next-seo';
+import { generateSeo } from '@/hooks/generateSeo';
+
 import styled from 'styled-components';
 import { device } from '@/styles/BreakPoints';
 import { Headline } from '@/styles/BaseStyles';
 
 export default function Home() {
+   /* Add an SEO to every page */
+   // const pageSeoProps = generateSeo(data?.pageSeo?.seoTitle ? data?.pageSeo : globalData?.pageSeo);
+
    return (
-      <div>
-         <Headline>I'm a headline</Headline>
-         <Paragraph>Hello World</Paragraph>
-      </div>
+      <>
+         {/* <NextSeo {...pageSeoProps} /> */}
+         <div>
+            <Headline>I'm a headline</Headline>
+            <Paragraph>Hello World</Paragraph>
+         </div>
+      </>
    );
 }
 
@@ -29,4 +38,3 @@ const Paragraph = styled.p`
       font-size: 30px;
    }
 `;
-
