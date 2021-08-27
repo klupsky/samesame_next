@@ -223,7 +223,7 @@ This project uses `@` for imports. `@/components/example.js`
 
   
 
-Next.js: `10.2.2`
+Next.js: `11.1.0`
 
 React + DOM: `17.0.2`
 
