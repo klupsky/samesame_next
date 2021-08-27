@@ -76,6 +76,16 @@ Concepts such as: `Theming`, `CSS Variables in styled components`, `base styles`
 
 You can choose with what to go and delete what you don't need.
 
+## Sanity Connection
+Currently this repository has a set up Sanity (www.sanity.io) connection. Simply change the credentials in the `.env` file and you are good to go. If there is no backend needed, simply delete the `lib` file and the `files` in the `hooks` folder + run a `npm uninstall` on all `sanity packages`.
+
+### Query language: groq
+The content is queried in with `groq`, which is similar to `graphql`. 
+* How to: https://www.sanity.io/docs/how-queries-work
+* Cheat Sheet: https://www.sanity.io/docs/query-cheat-sheet
+
+You can preview the response object in the `vision` tab in the `sanity studio`. There is an example query set up in `/lib/queries`. 
+
   ## Collaboration
 
 
