@@ -1,6 +1,6 @@
 {
-  "name": "snoetta-boilerplate",
-  "version": "1.0.0",
+  "name": "samesame-starter",
+  "version": "1.2.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
