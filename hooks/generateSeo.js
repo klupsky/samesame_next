@@ -1,3 +1,7 @@
+/* 
+   Every page needs a dedicated SEO. This is a helper function to insert an SEO to every page.
+*/
+
 export const generateSeo = (pageSeo) => {
    const pageSeoProps = {
       title: `Same Same Studio | ${pageSeo && pageSeo.seoTitle}` || '',
