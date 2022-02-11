@@ -25,6 +25,14 @@ export default function Home() {
             }
          }}>
          {/* <NextSeo {...pageSeoProps} /> */}
+         <header className="pos-fixed w-full d-flex flex-justify-between">
+            <h1 className="h3">Starter</h1>
+            <nav className="d-flex">
+               <p>Hi there</p>
+               <p>Hi there</p>
+               <p>Hi there</p>
+            </nav>
+         </header>
          <div>
             <Headline>Headline</Headline>
             <Paragraph>Hello World</Paragraph>

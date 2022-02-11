@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 /* 
 _____________________________________
 The UTILITIES have to be configured for every project.
@@ -14,7 +16,7 @@ d = display
 t = text-transforms/ decorations
 w = width
 h = height
-flx = flex
+flex = flex
 grid = grid
 bd = border
 trans = transition
@@ -257,44 +259,44 @@ _____________________________________
 
 /* 
 _____________________________________
-FLEXBOX, flx
+FLEXBOX, flex
 _____________________________________
 */ 
 
-.flx-wrap-row {
+.flex-wrap-row {
     flex-wrap: row;
 }
 
-.flx-wrap-col {
+.flex-wrap-col {
     flex-wrap: column;
 }
 
-.flx-justify-between {
+.flex-justify-between {
     width: 100%;
     justify-content: space-between;
     align-items: center;
 }
 
-.flx-center {
+.flex-center {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.flx-row {
+.flex-row {
     flex-direction: row;
 }
 
-.flx-col {
+.flex-col {
     flex-direction: column;
 }
 
-.flx-align-center {
+.flex-align-center {
     align-items: center;
 }
 
-.flx-align-between {
+.flex-align-between {
     align-items: space-between;
 }
 
@@ -466,10 +468,10 @@ _____________________________________
 // Margin
 
 .m {
-    padding: $pd-md;
+    margin: $pd-md;
 
     @media screen and (min-width: $tablet) {
-        padding: $pd-lg;
+        margin: $pd-lg;
     }
 }
 
