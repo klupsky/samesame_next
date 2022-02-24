@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 import { createGlobalStyle } from 'styled-components';
+// import ut from '@/styles/UtilityClasses';
 
 // Global Styles go here:
 const CustomStyles = createGlobalStyle`
@@ -8,21 +9,15 @@ const CustomStyles = createGlobalStyle`
   box-sizing: border-box;
 }
 
-/* Define global variables here */
-:root {
-  --primaryColor: blue;
-}
-
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--font-main);
 }
 
 p {
-  font-size: 12px;
-  font-family: 'Open Sans', sans-serif;
+  
 }
 
 a {

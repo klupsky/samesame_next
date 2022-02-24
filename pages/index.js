@@ -1,9 +1,7 @@
-import { NextSeo } from 'next-seo';
-import { generateSeo } from '@/hooks/generateSeo';
-
 import styled from 'styled-components';
 import { device } from '@/styles/BreakPoints';
-import { Headline } from '@/styles/BaseStyles';
+import { Headline } from '@/styles/base/BaseStyles';
+import { d_flex, flex_justify_between } from '@/styles/base/Utilities';
 
 import { motion } from 'framer-motion';
 
@@ -25,14 +23,14 @@ export default function Home() {
             }
          }}>
          {/* <NextSeo {...pageSeoProps} /> */}
-         <header className="pos-fixed w-full d-flex flex-justify-between">
-            <h1 className="h3">Starter</h1>
-            <nav className="d-flex">
+         <Header>
+            <h1>Starter</h1>
+            <Navigation>
                <p>Hi there</p>
                <p>Hi there</p>
                <p>Hi there</p>
-            </nav>
-         </header>
+            </Navigation>
+         </Header>
          <div>
             <Headline>Headline</Headline>
             <Paragraph>Hello World</Paragraph>
@@ -44,7 +42,6 @@ export default function Home() {
 // add your custom styles here:
 const Paragraph = styled.p`
    /* you can use your theme */
-   color: ${(props) => props.theme.colors.lightBlue};
    text-align: center;
    font-size: 12px;
 
@@ -58,4 +55,15 @@ const Paragraph = styled.p`
    @media ${device.tablet} {
       font-size: 30px;
    }
+`;
+
+const Navigation = styled.nav`
+   /* you can use your theme */
+   ${d_flex}
+`;
+
+const Header = styled.header`
+   /* you can use your theme */
+   ${d_flex}
+   ${flex_justify_between}
 `;

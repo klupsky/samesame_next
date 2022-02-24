@@ -29,6 +29,7 @@ module.exports = {
       'consistent-return': 'off',
       'import/prefer-default-export': 'off',
       'arrow-body-style': 'off',
+      camelcase: 'off',
       'prettier/prettier': ['error', {}, { usePrettierrc: true }]
    },
    parser: '@babel/eslint-parser',
