@@ -6,26 +6,26 @@ import { device } from '@/styles/BreakPoints';
 export const H1 = styled.h1`
    ${f_black}
    ${m_none}
-   font-size: 60px;
+   font-size: var(--f-lg);
 
    @media ${device.tablet} {
-      font-size: 30px;
+      font-size: var(--f-xxl);
    }
 `;
 
 export const H2 = styled.h2`
    ${f_black}
    ${m_none}
-   font-size: 30px;
+   font-size: var(--f-lg);
 
    @media ${device.tablet} {
-      font-size: 20px;
+      font-size: var(--f-xl);
    }
 `;
 
 export const P = styled.p`
    /* you can use your theme */
-   font-size: 18px;
+   font-size: var(--f-sm);
 
    /* how to use pseudo selectors */
    :hover {
@@ -35,6 +35,6 @@ export const P = styled.p`
 
    /* how to use media queries */
    @media ${device.tablet} {
-      font-size: 14px;
+      font-size: var(--f-md);
    }
 `;
