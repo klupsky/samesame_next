@@ -32,7 +32,6 @@ module.exports = {
       camelcase: 'off',
       'prettier/prettier': ['error', {}, { usePrettierrc: true }]
    },
-   parser: '@babel/eslint-parser',
    settings: {
       'import/resolver': {
          alias: {
