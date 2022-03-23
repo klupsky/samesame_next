@@ -147,23 +147,20 @@ export const pos_absolute = css`
 `;
 
 export const pos_absolute_right = css`
-   position: absolute;
    right: 0;
    top: 50%;
-   transform: translateY(50%);
+   transform: translateY(-50%);
 `;
 
 export const absolute_center_top = css`
-   position: absolute;
    top: 50%;
-   transform: translateY(50%);
+   transform: translateY(-50%);
 `;
 
 export const pos_absolute_center = css`
-   position: absolute;
    top: 50%;
    left: 50%;
-   transform: translate(50%, 50%);
+   transform: translate(-50%, -50%);
 `;
 
 export const pos_fixed = css`
@@ -282,82 +279,82 @@ export const grid_12 = css`
 `;
 
 export const grid_start_1 = css`
-   grid-column: 1 / 1;
+   grid-column: 1 / -1;
 `;
 
 export const grid_start_2 = css`
-   grid-column: 1 / 1;
+   grid-column: 1 / -1;
 
    @media ${device.tablet} {
-      grid-column: 2 / 1;
+      grid-column: 2 / -1;
    }
 `;
 
 export const grid_start_3 = css`
-   grid-column: 1 / 1;
+   grid-column: 3 / -1;
 
    @media ${device.tablet} {
-      grid-column: 3 / 1;
+      grid-column: 3 / -1;
    }
 `;
 
 export const grid_start_4 = css`
-   grid-column: 1 / 1;
+   grid-column: 1 / -1;
 
    @media ${device.tablet} {
-      grid-column: 4 / 1;
+      grid-column: 4 / -1;
    }
 `;
 
 export const grid_start_5 = css`
-   grid-column: 1 / 1;
+   grid-column: 1 / -1;
 
    @media ${device.tablet} {
-      grid-column: 5 / 1;
+      grid-column: 5 / -1;
    }
 `;
 
 export const grid_start_6 = css`
-   grid-column: 1 / 1;
+   grid-column: 1 / -1;
 
    @media ${device.tablet} {
-      grid-column: 6 / 1;
+      grid-column: 6 / -1;
    }
 `;
 
 export const grid_start_7 = css`
-   grid-column: 1 / 1;
+   grid-column: 1 / -1;
 
    @media ${device.tablet} {
-      grid-column: 7 / 1;
+      grid-column: 7 / -1;
    }
 `;
 
 export const grid_start_8 = css`
-   grid-column: 1 / 1;
+   grid-column: 1 / -1;
 
    @media ${device.tablet} {
-      grid-column: 8 / 1;
+      grid-column: 8 / -1;
    }
 `;
 
 export const grid_start_9 = css`
-   grid-column: 9 / 1;
+   grid-column: 9 / -1;
 `;
 
-export const grid_start10 = css`
-   grid-column: 10 / 1;
+export const grid_start_10 = css`
+   grid-column: 10 / -1;
 `;
 
-export const grid_start11 = css`
-   grid-column: 11 / 1;
+export const grid_start_11 = css`
+   grid-column: 11 / -1;
 `;
 
-export const grid_start12 = css`
-   grid-column: 12 / 1;
+export const grid_start_12 = css`
+   grid-column: 12 / -1;
 `;
 
-export const grid_span1 = css`
+export const grid_span_1 = css`
    grid-column: span 1;
 `;
 
@@ -485,15 +482,15 @@ BORDERS
 */
 
 export const bd = css`
-   border: var(--bd-border-main);
+   border: var(--bd-main);
 `;
 
 export const bd_inverted = css`
-   border: var(--bd-border-main-inverted);
+   border: var(--bd-main-inverted);
 `;
 
 export const bd_radius = css`
-   border-radius: var(--bd-border-radius);
+   border-radius: var(--bd-radius);
 `;
 
 export const bd_radius_round = css`

@@ -50,6 +50,8 @@ const CustomStyles = createGlobalStyle`
 /* grid-12 */
 --mobile-grid: repeat(6, minmax(0, 1fr));
 --desktop-grid: repeat(12, minmax(0, 1fr));
+--desktop-grid-cols: 12;
+--mobile-grid-cols: 6;
 
 /* screen sizes */
 --mobile: 400px;
@@ -59,9 +61,9 @@ const CustomStyles = createGlobalStyle`
 --desktop-lg: 1800px;
 
 /* borders (prefix: b) */
---bd-border-radius: 20px;
---bd-border-main: solid var(--c-black) 1px;
---bd-border-main-inverted: solid var(--c-gray) 1px;
+--bd-radius: 20px;
+--bd-main: solid var(--c-black) 1px;
+--bd-main-inverted: solid var(--c-gray) 1px;
 }
 
 `;
