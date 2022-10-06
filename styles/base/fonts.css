@@ -1,7 +1,80 @@
 @font-face {
-    font-family: 'Open Sans';
-    src: url('/fonts/opensans-regular-webfont.woff2') format('woff2'),
-         url('/fonts/opensans-regular-webfont.woff') format('woff');
-    font-weight: normal;
+    font-family: 'Euclid Circular B';
+    src: url('/fonts/euclidcircularb-bold-webfont.woff2') format('woff2'),
+         url('/fonts/euclidcircularb-bold-webfont.woff') format('woff');
+    font-weight: 300;
     font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Euclid Circular B Bold';
+    src: url('/fonts/euclidcircularb-regular-webfont.woff2') format('woff2'),
+         url('/fonts/euclidcircularb-regular-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Euclid Circular B Light';
+    src: url('/fonts/euclidcircularb-light-webfont.woff2') format('woff2'),
+         url('/fonts/euclidcircularb-light-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Glamour Absolute';
+    src: url('/fonts/glamourabsolute-condensed.woff2') format('woff2'),
+         url('/fonts/glamourabsolute-condensed.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Queens';
+    src: url('/fonts/queens_w-regular.woff2') format('woff2'),
+         url('/fonts/queens_w-regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Queens Italic';
+    src: url('/fonts/queens_w-italic.woff2') format('woff2'),
+         url('/fonts/queens_w-italic.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Queens Medium';
+    src: url('/fonts/queens_w-medium-italic.woff2') format('woff2'),
+         url('/fonts/queens_w-medium-italic.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Queens Medium Italic';
+    src: url('/fonts/queens_w-medium-italic.woff2') format('woff2'),
+         url('/fonts/queens_w-medium-italic.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sweet Sans Bold';
+    src: url('/fonts/sweetsans-bold.woff2') format('woff2'),
+         url('/fonts/sweetsans-bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
 }

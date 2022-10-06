@@ -11,11 +11,31 @@ FONT STYLES / Text Tranforms / Decorations
 */
 
 export const f_main = css`
-   font-family: var(--f-light);
+   font-family: var(--f-main-light);
 `;
 
-export const f_black = css`
-   font-family: var(--f-black);
+export const f_main_bold = css`
+   font-family: var(--f_main_bold);
+`;
+
+export const f_main_light = css`
+   font-family: var(--f_main_light);
+`;
+
+export const f_glamour = css`
+   font-family: var(--f_glamour);
+`;
+
+export const f_queens = css`
+   font-family: var(--f_queens);
+`;
+
+export const f_queens_med = css`
+   font-family: var(--f_queens_med);
+`;
+
+export const f_queens_med_italic = css`
+   font-family: var(--f_queens_med_italic);
 `;
 
 export const t_uppercase = css`
@@ -45,42 +65,98 @@ PARAGRAPH, HEADLINE STYLES
 */
 
 export const p = css`
-   font-size: var(--f-sm);
+   font-size: var(--f-16);
 
    @media ${device.tablet} {
-      font-size: var(--f-md);
+      font-size: var(--f-18);
    }
 `;
 
 export const p_xs = css`
-   font-size: var(--f-xs);
+   font-size: var(--f-12);
+
+   @media ${device.tablet} {
+      font-size: var(--f-14);
+   }
 `;
 
 export const p_sm = css`
-   font-size: var(--f-sm);
+   font-size: var(--f-14);
+
+   @media ${device.tablet} {
+      font-size: var(--f-16);
+   }
+`;
+
+export const p_xl = css`
+   font-size: var(--f-40);
+
+   @media ${device.tablet} {
+      font-size: var(--f-64);
+   }
+`;
+
+export const p_lg = css`
+   font-size: var(--f-28);
+
+   @media ${device.tablet} {
+      font-size: var(--f-48);
+   }
+`;
+
+export const p_md = css`
+   font-size: var(--f-20);
+
+   @media ${device.tablet} {
+      font-size: var(--f-28);
+   }
+`;
+
+export const p_btn = css`
+   font-size: var(--f-12);
+
+   @media ${device.tablet} {
+      font-size: var(--f-14);
+   }
 `;
 
 export const h1 = css`
-   font-size: var(--f-xl);
+   font-size: var(--f-74);
 
    @media ${device.tablet} {
-      font-size: var(--f_xxl);
+      font-size: var(--f_140);
    }
 `;
 
 export const h2 = css`
-   font-size: var(--f-lg);
+   font-size: var(--f-60);
 
    @media ${device.tablet} {
-      font-size: var(--f-xl);
+      font-size: var(--f-64);
+   }
+`;
+
+export const h2_alt = css`
+   font-size: var(--f-45);
+
+   @media ${device.tablet} {
+      font-size: var(--f-48);
    }
 `;
 
 export const h3 = css`
-   font-size: var(--f-md);
+   font-size: var(--f-28);
 
    @media ${device.tablet} {
-      font-size: var(--f-lg);
+      font-size: var(--f-34);
+   }
+`;
+
+export const h4 = css`
+   font-size: var(--f-12);
+
+   @media ${device.tablet} {
+      font-size: var(--f-14);
    }
 `;
 
