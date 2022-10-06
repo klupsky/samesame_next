@@ -1,7 +1,6 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 import { createGlobalStyle } from 'styled-components';
-import { device } from './BreakPoints';
 
 // import ut from '@/styles/UtilityClasses';
 
@@ -11,6 +10,8 @@ const CustomStyles = createGlobalStyle`
 
 * {
   box-sizing: border-box;
+  margin: 0;
+
 }
 
 html,

@@ -37,6 +37,9 @@ const CustomStyles = createGlobalStyle`
 --line-height-md: 1.1;
 --line-height-sm: 0.9;
 
+/* letter-spacings */
+--letter-spacing-8: 0.08rem;
+
 /* font sizes (prefix: f) */
 --f-12: 12px;
 --f-14: 14px;

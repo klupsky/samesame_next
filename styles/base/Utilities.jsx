@@ -19,11 +19,11 @@ export const f_main_bold = css`
 `;
 
 export const f_main_light = css`
-   font-family: var(--f_main_light);
+   font-family: var(--f-main-light);
 `;
 
 export const f_glamour = css`
-   font-family: var(--f_glamour);
+   font-family: var(--f-glamour);
 `;
 
 export const f_queens = css`
@@ -36,6 +36,10 @@ export const f_queens_med = css`
 
 export const f_queens_med_italic = css`
    font-family: var(--f_queens_med_italic);
+`;
+
+export const f_sweet_bold = css`
+   font-family: var(--f-sweet-bold);
 `;
 
 export const t_uppercase = css`
@@ -541,7 +545,7 @@ TRANSITIONS
 */
 
 export const trans_all = css`
-   transition: all 0export const 3s ease;
+   transition: all 0.3s ease;
 `;
 
 export const trans_rotate = css`
@@ -571,6 +575,10 @@ export const bd_radius = css`
 
 export const bd_radius_round = css`
    border-radius: 50%;
+`;
+
+export const bd_radius_lg = css`
+   border-radius: var(--bd-radius-lg);
 `;
 
 /* 
@@ -703,4 +711,108 @@ export const input_spacing = css`
    @media ${device.tablet} {
       padding: rem(10) rem(20);
    }
+`;
+
+export const btn_spacing = css`
+   padding: rem(13) rem(30);
+
+   @media ${device.tablet} {
+      padding: rem(15) rem(30);
+   }
+`;
+
+/* 
+------------------------------------_
+COLORS
+------------------------------------_
+*/
+
+// backgrounds
+
+export const bg_black = css`
+   background-color: var(--c-black);
+`;
+
+export const bg_white = css`
+   background-color: var(--c-white);
+`;
+
+export const bg_cream = css`
+   background-color: var(--c-cream);
+`;
+
+export const bg_yellow = css`
+   background-color: var(--c-yellow);
+`;
+
+export const bg_pink = css`
+   background-color: var(--c-pink);
+`;
+
+export const bg_burgundy = css`
+   background-color: var(--c-burgundy);
+`;
+
+export const bg_red = css`
+   background-color: var(--c-red);
+`;
+
+// border
+
+export const bd_black = css`
+   border-color: var(--c-black);
+`;
+
+export const bd_white = css`
+   border-color: var(--c-white);
+`;
+
+export const bd_cream = css`
+   border-color: var(--c-cream);
+`;
+
+export const bd_yellow = css`
+   border-color: var(--c-yellow);
+`;
+
+export const bd_pink = css`
+   border-color: var(--c-pink);
+`;
+
+export const bd_burgundy = css`
+   border-color: var(--c-burgundy);
+`;
+
+export const bd_red = css`
+   border-color: var(--c-red);
+`;
+
+// fonts
+
+export const f_black = css`
+   color: var(--c-black);
+`;
+
+export const f_white = css`
+   color: var(--c-white);
+`;
+
+export const f_cream = css`
+   color: var(--c-cream);
+`;
+
+export const f_yellow = css`
+   color: var(--c-yellow);
+`;
+
+export const f_pink = css`
+   color: var(--c-pink);
+`;
+
+export const f_burgundy = css`
+   color: var(--c-burgundy);
+`;
+
+export const f_red = css`
+   color: var(--c-red);
 `;

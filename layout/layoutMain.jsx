@@ -1,7 +1,5 @@
-import styled from 'styled-components';
-import { H1, H2, P } from '@/styles/base/BaseStyles';
-import { d_flex, flex_justify_between } from '@/styles/base/Utilities';
-
+// import styled from 'styled-components';
+import { BUTTON } from '@/styles/base/BaseStyles';
 import { motion } from 'framer-motion';
 
 export default function LayoutMain({ children }) {
@@ -22,27 +20,33 @@ export default function LayoutMain({ children }) {
             }
          }}>
          {/* <NextSeo {...pageSeoProps} /> */}
-         <Header>
+         {/* <Header>
             <H1>Starter</H1>
+            <Headline>Hello</Headline>
             <Navigation>
                <p>Hi there</p>
                <p>Hi there</p>
                <p>Hi there</p>
             </Navigation>
-         </Header>
+         </Header> */}
+         <BUTTON>shop now</BUTTON>
          <main>{children}</main>
       </motion.div>
    );
 }
 
-// your custom styles go here:
-const Navigation = styled.nav`
-   /* you can use your theme */
-   ${d_flex}
-`;
+// const Button = styled.div`
+//    ${bg_burgundy}
+// `;
 
-const Header = styled.header`
-   /* you can use your theme */
-   ${d_flex}
-   ${flex_justify_between}
-`;
+// your custom styles go here:
+// const Navigation = styled.nav`
+//    /* you can use your theme */
+//    ${d_flex}
+// `;
+
+// const Header = styled.header`
+//    /* you can use your theme */
+//    ${d_flex}
+//    ${flex_justify_between}
+// `;
