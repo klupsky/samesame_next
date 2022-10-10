@@ -28,6 +28,8 @@ const CustomStyles = createGlobalStyle`
 --f-queens-italic: 'Queens Italic', serif;
 --f-queens-med: 'Queens Medium', serif;
 --f-queens-med-italic: 'Queens Medium Italic', serif;
+--f-queens-bold-italic: 'Queens Bold Italic', serif;
+
 
 --f-sweet-bold: 'Sweet Sans Bold', sans-serif;
 
@@ -36,9 +38,6 @@ const CustomStyles = createGlobalStyle`
 --line-height: 1;
 --line-height-md: 1.1;
 --line-height-sm: 0.9;
-
-/* letter-spacings */
---letter-spacing-8: 0.08rem;
 
 /* font sizes (prefix: f) */
 --f-12: 12px;
@@ -108,7 +107,7 @@ const CustomStyles = createGlobalStyle`
 --bd-main: solid var(--c-yellow) 1px;
 --bd-main-inverted: solid var(--c-burgundy) 1px;
 --bd-main-red: solid var(--c-red) 1px;
---bd-main-burg: solid var(--c-burgundy) 1px;
+--bd-main-burgundy: solid var(--c-burgundy) 1px;
 
 /* shadows */
 --drop-shadow: 0px 4px 4px rgba(126, 19, 61, 0.08);

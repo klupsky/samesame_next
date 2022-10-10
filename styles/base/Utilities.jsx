@@ -15,8 +15,7 @@ export const f_main = css`
 `;
 
 export const f_main_bold = css`
-   font-family: var(--f_main_bold);
-`;
+   font-family: var(--f_main_bold);`;
 
 export const f_main_light = css`
    font-family: var(--f-main-light);
@@ -27,19 +26,28 @@ export const f_glamour = css`
 `;
 
 export const f_queens = css`
-   font-family: var(--f_queens);
+   font-family: var(--f-queens);
+`;
+
+export const f_queens_italic = css`
+   font-family: var(--f-queens-italic);
 `;
 
 export const f_queens_med = css`
-   font-family: var(--f_queens_med);
+   font-family: var(--f-queens-med);
 `;
 
 export const f_queens_med_italic = css`
-   font-family: var(--f_queens_med_italic);
+   font-family: var(--f-queens-med-italic);
+`;
+
+export const f_queens_bold_italic = css`
+   font-family: var(--f-queens-bold-italic);
 `;
 
 export const f_sweet_bold = css`
    font-family: var(--f-sweet-bold);
+   letter-spacing: 0.08rem;
 `;
 
 export const t_uppercase = css`
@@ -81,6 +89,14 @@ export const p_xs = css`
 
    @media ${device.tablet} {
       font-size: var(--f-14);
+   }
+`;
+
+export const p_btn_s = css`
+   font-size: var(--f-12);
+
+   @media ${device.tablet} {
+      font-size: var(--f-12);
    }
 `;
 
@@ -128,7 +144,7 @@ export const h1 = css`
    font-size: var(--f-74);
 
    @media ${device.tablet} {
-      font-size: var(--f_140);
+      font-size: var(--f-140);
    }
 `;
 
@@ -288,12 +304,12 @@ export const d_none = css`
    display: none;
 `;
 
-export const d_inline_block = css`
-   display: inline-block;
-`;
-
 export const d_block = css`
    display: block;
+`;
+
+export const d_inline_block = css`
+   display: inline-block;
 `;
 
 export const d_flex = css`
@@ -305,6 +321,10 @@ export const d_flex = css`
 FLEXBOX, flex
 ------------------------------------_
 */
+
+export const flex_wrap = css`
+   flex-wrap: wrap;
+`;
 
 export const flex_wrap_row = css`
    flex-wrap: row;
@@ -545,8 +565,13 @@ TRANSITIONS
 */
 
 export const trans_all = css`
+   transition: all 0export const 3s ease;
+`;
+
+export const trans_all_ease = css`
    transition: all 0.3s ease;
 `;
+
 
 export const trans_rotate = css`
    transition: all 0export const 3s ease;
@@ -611,6 +636,7 @@ SPACINGS
 
 export const m_top_xl = css`
    margin-top: var(--pd-lg);
+   line-height: (--line-height);
 
    @media ${device.tablet} {
       margin-top: var(--pd-xl);
