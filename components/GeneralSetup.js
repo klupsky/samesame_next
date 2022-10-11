@@ -1,10 +1,8 @@
 import styled from 'styled-components';
 import { Button, ButtonBurgundy, ButtonLoadMore, ButtonQuickAdd } from '@/components/Button';
-
+import IconsCart from './IconCart';
 import { device } from '@/styles/BreakPoints';
 import { IconSearch, 
-   IconCart,
-   IconCartMobile,
    IconProfile,
    IconSandwichMobile,
    IconClose,
@@ -30,7 +28,7 @@ import Logo from './Logo';
 import { m,
    d_flex,
    flex_wrap,
-   d_inline_block,
+   d_block,
    t_uppercase,
    f_main_light,
    f_main_bold,
@@ -121,11 +119,13 @@ export default function GeneralSetup() {
             <ul>
                <li>{IconSearch}</li>
                <li>{IconProfile}</li>
-               <li>{IconCart}</li>
-               <li>{IconCartMobile}</li>
                <li>{IconSandwichMobile}</li>
                <li>{IconClose}</li>
             </ul>
+         </BlockContainer>
+
+         <BlockContainer>
+        <IconsCart/>
          </BlockContainer>
 
          <BlockContainer>
@@ -165,7 +165,7 @@ margin: 10px;
 
 const BlockContainer = styled.div`
 ${m}
-${d_inline_block}
+${d_block}
 li {
    display: inline;
    margin-right: 10px;

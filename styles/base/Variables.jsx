@@ -40,6 +40,8 @@ const CustomStyles = createGlobalStyle`
 --line-height-sm: 0.9;
 
 /* font sizes (prefix: f) */
+--f-8: 8px;
+--f-10: 10px;
 --f-12: 12px;
 --f-14: 14px;
 --f-16: 16px;

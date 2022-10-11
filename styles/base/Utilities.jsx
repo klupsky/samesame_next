@@ -100,6 +100,14 @@ export const p_btn_s = css`
    }
 `;
 
+export const p_btn_xs = css`
+   font-size: var(--f-8);
+
+   @media ${device.tablet} {
+      font-size: var(--f-10);
+   }
+`;
+
 export const p_sm = css`
    font-size: var(--f-14);
 

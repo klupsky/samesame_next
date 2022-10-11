@@ -44,12 +44,12 @@ const LogoDesktop = styled.div`
    display: none;
 
    @media ${device.tablet} {
-      display: block;
+      display: inline-block;
    }
 `;
 
 const LogoMobile = styled.div`
-   display: block;
+   display: inline-block;
 
    @media ${device.tablet} {
       display: none;
