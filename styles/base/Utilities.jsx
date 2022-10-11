@@ -15,7 +15,8 @@ export const f_main = css`
 `;
 
 export const f_main_bold = css`
-   font-family: var(--f_main_bold);`;
+   font-family: var(--f_main_bold);
+`;
 
 export const f_main_light = css`
    font-family: var(--f-main-light);
@@ -77,15 +78,64 @@ PARAGRAPH, HEADLINE STYLES
 */
 
 export const p = css`
+   ${f_main_light}
    font-size: var(--f-16);
+   line-height: var(--line-height-md) @media ${device.tablet} {
+      font-size: var(--f-18);
+   }
+`;
+
+// export const p = css`
+//    font-size: var(--f-16);
+//    ${f_main_light}
+//    line-height: var(--line-height-md)
+
+//    @media ${device.tablet} {
+//       font-size: var(--f-18);
+//    }
+// `;
+
+export const p_m = css`
+   font-size: var(--f-16);
+   line-height: var(--line-height-md) ${f_main_bold} @media ${device.tablet} {
+      font-size: var(--f-18);
+   }
+`;
+
+export const p_s = css`
+   ${f_main_light}
+   line-height: var(--line-height-md);
+   font-size: var(--f-14);
 
    @media ${device.tablet} {
-      font-size: var(--f-18);
+      font-size: var(--f-16);
+   }
+`;
+
+export const p_sm = css`
+   ${f_main_bold}
+   line-height: var(--line-height-md);
+   font-size: var(--f-14);
+
+   @media ${device.tablet} {
+      font-size: var(--f-16);
    }
 `;
 
 export const p_xs = css`
    font-size: var(--f-12);
+   ${f_main_light}
+   line-height: var(--line-height-md);
+
+   @media ${device.tablet} {
+      font-size: var(--f-14);
+   }
+`;
+
+export const p_xsm = css`
+   font-size: var(--f-12);
+   ${f_main_bold}
+   line-height: var(--line-height-md);
 
    @media ${device.tablet} {
       font-size: var(--f-14);
@@ -108,16 +158,38 @@ export const p_btn_xs = css`
    }
 `;
 
-export const p_sm = css`
+export const p_productCard = css`
    font-size: var(--f-14);
+   ${f_sweet_bold}
+   ${t_uppercase}
 
    @media ${device.tablet} {
       font-size: var(--f-16);
    }
 `;
 
+export const p_productCardSearch = css`
+   font-size: var(--f-12);
+   ${f_sweet_bold}
+   ${t_uppercase}
+
+@media ${device.tablet} {
+      font-size: var(--f-14);
+   }
+`;
+
 export const p_xl = css`
    font-size: var(--f-40);
+   ${f_queens}
+
+   @media ${device.tablet} {
+      font-size: var(--f-64);
+   }
+`;
+
+export const p_xl_italic = css`
+   font-size: var(--f-40);
+   ${f_queens_med_italic}
 
    @media ${device.tablet} {
       font-size: var(--f-64);
@@ -126,14 +198,52 @@ export const p_xl = css`
 
 export const p_lg = css`
    font-size: var(--f-28);
+   ${f_queens_med}
+   line-height: (--line-height);
 
    @media ${device.tablet} {
       font-size: var(--f-48);
+      line-height: (--line-height-md);
    }
 `;
 
-export const p_md = css`
+export const p_lg_italic = css`
+   font-size: var(--f-28);
+   line-height: (--line-height);
+   ${f_queens_med_italic}
+
+   @media ${device.tablet} {
+      font-size: var(--f-48);
+      line-height: (--line-height-md);
+   }
+`;
+
+export const p_med = css`
    font-size: var(--f-20);
+   ${f_queens}
+   line-height: (--line-height-md);
+
+   @media ${device.tablet} {
+      font-size: var(--f-28);
+      line-height: (--line-height);
+   }
+`;
+
+export const p_med_italic = css`
+   font-size: var(--f-20);
+   line-height: (--line-height-md);
+   ${f_queens_italic}
+
+   @media ${device.tablet} {
+      font-size: var(--f-28);
+      line-height: (--line-height);
+   }
+`;
+
+export const p_med_bold_italic = css`
+   ${f_queens_bold_italic}
+   font-size: var(--f-20);
+   line-height: (--line-height-md);
 
    @media ${device.tablet} {
       font-size: var(--f-28);
@@ -150,21 +260,102 @@ export const p_btn = css`
 
 export const h1 = css`
    font-size: var(--f-74);
+   font-weight: 500;
 
    @media ${device.tablet} {
       font-size: var(--f-140);
    }
 `;
 
+export const h1_glamour = css`
+   ${f_glamour}
+   font-size: var(--f-74);
+   font-weight: 500;
+   line-height: (--line-height);
+
+   @media ${device.tablet} {
+      font-size: var(--f-140);
+      line-height: (--line-height);
+   }
+`;
+
+export const h1_queens = css`
+   ${f_queens}
+   font-size: var(--f-74);
+   font-weight: 500;
+   line-height: (--line-height-md);
+
+   @media ${device.tablet} {
+      font-size: var(--f-140);
+      line-height: (--line-height);
+   }
+`;
+
 export const h2 = css`
    font-size: var(--f-60);
+   font-weight: 400;
 
    @media ${device.tablet} {
       font-size: var(--f-64);
    }
 `;
 
+export const h2_glamour = css`
+   ${f_glamour}
+   font-weight: 400;
+   font-size: var(--f-60);
+   line-height: (--line-height-sm);
+
+   @media ${device.tablet} {
+      font-size: var(--f-64);
+      line-height: (--line-height);
+   }
+`;
+
+export const h2_queens = css`
+   ${f_queens}
+   font-weight: 400;
+   font-size: var(--f-60);
+   line-height: (--line-height-sm);
+
+   @media ${device.tablet} {
+      font-size: var(--f-64);
+      line-height: (--line-height);
+   }
+`;
+
+export const h2_queens_med_italic = css`
+   ${f_queens_med_italic}
+   font-weight: 400;
+   font-size: var(--f-45);
+
+   @media ${device.tablet} {
+      font-size: var(--f-48);
+   }
+`;
+
 export const h2_alt = css`
+   font-size: var(--f-45);
+   font-weight: 400;
+
+   @media ${device.tablet} {
+      font-size: var(--f-48);
+   }
+`;
+
+export const h2_queens_med = css`
+   ${f_queens}
+   font-weight: 400;
+   font-size: var(--f-45);
+
+   @media ${device.tablet} {
+      font-size: var(--f-48);
+   }
+`;
+
+export const h2_queens_med_i = css`
+   ${f_queens_med_italic}
+   font-weight: 400;
    font-size: var(--f-45);
 
    @media ${device.tablet} {
@@ -173,6 +364,7 @@ export const h2_alt = css`
 `;
 
 export const h3 = css`
+   font-weight: 400;
    font-size: var(--f-28);
 
    @media ${device.tablet} {
@@ -180,8 +372,47 @@ export const h3 = css`
    }
 `;
 
-export const h4 = css`
-   font-size: var(--f-12);
+export const h3_queens = css`
+   font-weight: 400;
+   ${f_queens}
+   font-size: var(--f-28);
+   line-height: (--line-height);
+
+   @media ${device.tablet} {
+      font-size: var(--f-34);
+      line-height: (--line-height);
+   }
+`;
+
+export const h3_queens_med = css`
+   font-weight: 400;
+   ${f_queens_med}
+   font-size: var(--f-28);
+   line-height: (--line-height);
+
+   @media ${device.tablet} {
+      font-size: var(--f-34);
+      line-height: (--line-height);
+   }
+`;
+
+export const h3_queens_med_italic = css`
+   font-weight: 400;
+   ${f_queens_med_italic}
+   font-size: var(--f-28);
+   line-height: (--line-height);
+
+   @media ${device.tablet} {
+      font-size: var(--f-34);
+      line-height: (--line-height);
+   }
+`;
+
+export const h4_sweet = css`
+   ${p_xs}
+   ${f_sweet_bold}
+${t_uppercase}
+   font-weight: 400;
 
    @media ${device.tablet} {
       font-size: var(--f-14);
@@ -579,7 +810,6 @@ export const trans_all = css`
 export const trans_all_ease = css`
    transition: all 0.3s ease;
 `;
-
 
 export const trans_rotate = css`
    transition: all 0export const 3s ease;
