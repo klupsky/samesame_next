@@ -1,4 +1,3 @@
-
 import styled from 'styled-components';
 import { Button, ButtonBurgundy, ButtonLoadMore, ButtonQuickAdd } from '@/components/Button';
 
@@ -27,7 +26,7 @@ import { IconSearch,
    IconTikTok,
    IconTikTokMobile
  } from '@/components/IconsSocialMedia';
-import { Logo, LogoMobile } from '@/components/Logo';
+import Logo from './Logo';
 import { m,
    d_flex,
    flex_wrap,
@@ -116,8 +115,8 @@ export default function GeneralSetup() {
             <Black></Black>
          </FlexContainer>
 
-         <BlockContainer>{Logo}</BlockContainer>
-         <BlockContainer>{LogoMobile}</BlockContainer>
+         <BlockContainer><Logo/></BlockContainer>
+
          <BlockContainer>
             <ul>
                <li>{IconSearch}</li>
@@ -273,7 +272,7 @@ line-height: (--line-height);
 }
 `;
 
-const MediumQuoteItalic = styled.div`
+const MediumQuoteItalic = styled.blockquote`
 ${p_lg}
 ${f_queens_med_italic}
 line-height: (--line-height);
@@ -282,7 +281,7 @@ line-height: (--line-height);
 }
 `;
 
-const SmallQuote = styled.div`
+const SmallQuote = styled.blockquote`
 ${p_md}
 ${f_queens}
 line-height: (--line-height-md);
@@ -291,7 +290,7 @@ line-height: (--line-height-md);
 }
 `;
 
-const SmallQuoteItalic = styled.div`
+const SmallQuoteItalic = styled.blockquote`
 ${p_md}
 ${f_queens_italic}
 line-height: (--line-height-md);
@@ -300,55 +299,55 @@ line-height: (--line-height-md);
 }
 `;
 
-const SmallQuoteBoldItalic = styled.div`
+const SmallQuoteBoldItalic = styled.blockquote`
 ${p}
 ${f_queens_bold_italic}
 line-height: var(--line-height-md)
 `;
 
-const ParagraphRegular = styled.div`
+const ParagraphRegular = styled.p`
 ${p}
 ${f_main_light}
 line-height: var(--line-height-md)
 `;
 
-const ParagraphRegularBold = styled.div`
+const ParagraphRegularBold = styled.p`
 ${p}
 ${f_main_bold}
 line-height: var(--line-height-md)
 `;
 
-const ParagraphSmall = styled.div`
+const ParagraphSmall = styled.p`
 ${p_sm}
 ${f_main_light}
 line-height: var(--line-height-md);
 `;
 
-const ParagraphSmallBold = styled.div`
+const ParagraphSmallBold = styled.p`
 ${p_sm}
 ${f_main_bold}
 line-height: var(--line-height-md);
 `;
 
-const ParagraphXSmall = styled.div`
+const ParagraphXSmall = styled.p`
 ${p_xs}
 ${f_main_light}
 line-height: var(--line-height-md);
 `;
 
-const ParagraphXSmallBold = styled.div`
+const ParagraphXSmallBold = styled.p`
 ${p_xs}
 ${f_main_bold}
 line-height: var(--line-height-md);
 `;
 
-const ProductCard = styled.div`
+const ProductCard = styled.p`
 ${p_sm}
 ${f_sweet_bold}
 ${t_uppercase}
 `;
 
-const ProductCardSearch = styled.div`
+const ProductCardSearch = styled.p`
 ${p_btn}
 ${f_sweet_bold}
 ${t_uppercase}
