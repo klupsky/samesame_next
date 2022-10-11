@@ -112,7 +112,6 @@ export const ButtonQuickAdd = styled.div`
    letter-spacing: 0.08rem;
    height: 32px;
    padding: 7px 12px;
-   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
    @media ${device.tablet} {
       height: 28px;
