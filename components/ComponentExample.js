@@ -10,7 +10,7 @@ import styled from 'styled-components';
 import { device } from '@/styles/BreakPoints';
 import Image from 'next/image';
 
-const ExampleComponent = ({ image, museum, description, city, link, linkType }) => {
+const ComponentExample = ({ image, museum, description, city, link, linkType }) => {
    return (
       <Article>
          <Link href={link && linkResolver(linkType, link)}>
@@ -34,7 +34,7 @@ const ExampleComponent = ({ image, museum, description, city, link, linkType }) 
    );
 };
 
-export default ExampleComponent;
+export default ComponentExample;
 
 const Article = styled.article`
    width: 100%;

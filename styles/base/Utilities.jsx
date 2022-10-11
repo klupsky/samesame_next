@@ -11,11 +11,44 @@ FONT STYLES / Text Tranforms / Decorations
 */
 
 export const f_main = css`
-   font-family: var(--f-light);
+   font-family: var(--f-main-light);
 `;
 
-export const f_black = css`
-   font-family: var(--f-black);
+export const f_main_bold = css`
+   font-family: var(--f_main_bold);
+`;
+
+export const f_main_light = css`
+   font-family: var(--f-main-light);
+`;
+
+export const f_glamour = css`
+   font-family: var(--f-glamour);
+`;
+
+export const f_queens = css`
+   font-family: var(--f-queens);
+`;
+
+export const f_queens_italic = css`
+   font-family: var(--f-queens-italic);
+`;
+
+export const f_queens_med = css`
+   font-family: var(--f-queens-med);
+`;
+
+export const f_queens_med_italic = css`
+   font-family: var(--f-queens-med-italic);
+`;
+
+export const f_queens_bold_italic = css`
+   font-family: var(--f-queens-bold-italic);
+`;
+
+export const f_sweet_bold = css`
+   font-family: var(--f-sweet-bold);
+   letter-spacing: 0.08rem;
 `;
 
 export const t_uppercase = css`
@@ -45,42 +78,344 @@ PARAGRAPH, HEADLINE STYLES
 */
 
 export const p = css`
-   font-size: var(--f-sm);
+   ${f_main_light}
+   font-size: var(--f-16);
+   line-height: var(--line-height-md) @media ${device.tablet} {
+      font-size: var(--f-18);
+   }
+`;
+
+// export const p = css`
+//    font-size: var(--f-16);
+//    ${f_main_light}
+//    line-height: var(--line-height-md)
+
+//    @media ${device.tablet} {
+//       font-size: var(--f-18);
+//    }
+// `;
+
+export const p_m = css`
+   font-size: var(--f-16);
+   line-height: var(--line-height-md) ${f_main_bold} @media ${device.tablet} {
+      font-size: var(--f-18);
+   }
+`;
+
+export const p_s = css`
+   ${f_main_light}
+   line-height: var(--line-height-md);
+   font-size: var(--f-14);
 
    @media ${device.tablet} {
-      font-size: var(--f-md);
+      font-size: var(--f-16);
+   }
+`;
+
+export const p_sm = css`
+   ${f_main_bold}
+   line-height: var(--line-height-md);
+   font-size: var(--f-14);
+
+   @media ${device.tablet} {
+      font-size: var(--f-16);
    }
 `;
 
 export const p_xs = css`
-   font-size: var(--f-xs);
+   font-size: var(--f-12);
+   ${f_main_light}
+   line-height: var(--line-height-md);
+
+   @media ${device.tablet} {
+      font-size: var(--f-14);
+   }
 `;
 
-export const p_sm = css`
-   font-size: var(--f-sm);
+export const p_xsm = css`
+   font-size: var(--f-12);
+   ${f_main_bold}
+   line-height: var(--line-height-md);
+
+   @media ${device.tablet} {
+      font-size: var(--f-14);
+   }
+`;
+
+export const p_btn_s = css`
+   font-size: var(--f-12);
+
+   @media ${device.tablet} {
+      font-size: var(--f-12);
+   }
+`;
+
+export const p_btn_xs = css`
+   font-size: var(--f-8);
+
+   @media ${device.tablet} {
+      font-size: var(--f-10);
+   }
+`;
+
+export const p_productCard = css`
+   font-size: var(--f-14);
+   ${f_sweet_bold}
+   ${t_uppercase}
+
+   @media ${device.tablet} {
+      font-size: var(--f-16);
+   }
+`;
+
+export const p_productCardSearch = css`
+   font-size: var(--f-12);
+   ${f_sweet_bold}
+   ${t_uppercase}
+
+@media ${device.tablet} {
+      font-size: var(--f-14);
+   }
+`;
+
+export const p_xl = css`
+   font-size: var(--f-40);
+   ${f_queens}
+
+   @media ${device.tablet} {
+      font-size: var(--f-64);
+   }
+`;
+
+export const p_xl_italic = css`
+   font-size: var(--f-40);
+   ${f_queens_med_italic}
+
+   @media ${device.tablet} {
+      font-size: var(--f-64);
+   }
+`;
+
+export const p_lg = css`
+   font-size: var(--f-28);
+   ${f_queens_med}
+   line-height: (--line-height);
+
+   @media ${device.tablet} {
+      font-size: var(--f-48);
+      line-height: (--line-height-md);
+   }
+`;
+
+export const p_lg_italic = css`
+   font-size: var(--f-28);
+   line-height: (--line-height);
+   ${f_queens_med_italic}
+
+   @media ${device.tablet} {
+      font-size: var(--f-48);
+      line-height: (--line-height-md);
+   }
+`;
+
+export const p_med = css`
+   font-size: var(--f-20);
+   ${f_queens}
+   line-height: (--line-height-md);
+
+   @media ${device.tablet} {
+      font-size: var(--f-28);
+      line-height: (--line-height);
+   }
+`;
+
+export const p_med_italic = css`
+   font-size: var(--f-20);
+   line-height: (--line-height-md);
+   ${f_queens_italic}
+
+   @media ${device.tablet} {
+      font-size: var(--f-28);
+      line-height: (--line-height);
+   }
+`;
+
+export const p_med_bold_italic = css`
+   ${f_queens_bold_italic}
+   font-size: var(--f-20);
+   line-height: (--line-height-md);
+
+   @media ${device.tablet} {
+      font-size: var(--f-28);
+   }
+`;
+
+export const p_btn = css`
+   font-size: var(--f-12);
+
+   @media ${device.tablet} {
+      font-size: var(--f-14);
+   }
 `;
 
 export const h1 = css`
-   font-size: var(--f-xl);
+   font-size: var(--f-74);
+   font-weight: 500;
 
    @media ${device.tablet} {
-      font-size: var(--f_xxl);
+      font-size: var(--f-140);
+   }
+`;
+
+export const h1_glamour = css`
+   ${f_glamour}
+   font-size: var(--f-74);
+   font-weight: 500;
+   line-height: (--line-height);
+
+   @media ${device.tablet} {
+      font-size: var(--f-140);
+      line-height: (--line-height);
+   }
+`;
+
+export const h1_queens = css`
+   ${f_queens}
+   font-size: var(--f-74);
+   font-weight: 500;
+   line-height: (--line-height-md);
+
+   @media ${device.tablet} {
+      font-size: var(--f-140);
+      line-height: (--line-height);
    }
 `;
 
 export const h2 = css`
-   font-size: var(--f-lg);
+   font-size: var(--f-60);
+   font-weight: 400;
 
    @media ${device.tablet} {
-      font-size: var(--f-xl);
+      font-size: var(--f-64);
+   }
+`;
+
+export const h2_glamour = css`
+   ${f_glamour}
+   font-weight: 400;
+   font-size: var(--f-60);
+   line-height: (--line-height-sm);
+
+   @media ${device.tablet} {
+      font-size: var(--f-64);
+      line-height: (--line-height);
+   }
+`;
+
+export const h2_queens = css`
+   ${f_queens}
+   font-weight: 400;
+   font-size: var(--f-60);
+   line-height: (--line-height-sm);
+
+   @media ${device.tablet} {
+      font-size: var(--f-64);
+      line-height: (--line-height);
+   }
+`;
+
+export const h2_queens_med_italic = css`
+   ${f_queens_med_italic}
+   font-weight: 400;
+   font-size: var(--f-45);
+
+   @media ${device.tablet} {
+      font-size: var(--f-48);
+   }
+`;
+
+export const h2_alt = css`
+   font-size: var(--f-45);
+   font-weight: 400;
+
+   @media ${device.tablet} {
+      font-size: var(--f-48);
+   }
+`;
+
+export const h2_queens_med = css`
+   ${f_queens}
+   font-weight: 400;
+   font-size: var(--f-45);
+
+   @media ${device.tablet} {
+      font-size: var(--f-48);
+   }
+`;
+
+export const h2_queens_med_i = css`
+   ${f_queens_med_italic}
+   font-weight: 400;
+   font-size: var(--f-45);
+
+   @media ${device.tablet} {
+      font-size: var(--f-48);
    }
 `;
 
 export const h3 = css`
-   font-size: var(--f-md);
+   font-weight: 400;
+   font-size: var(--f-28);
 
    @media ${device.tablet} {
-      font-size: var(--f-lg);
+      font-size: var(--f-34);
+   }
+`;
+
+export const h3_queens = css`
+   font-weight: 400;
+   ${f_queens}
+   font-size: var(--f-28);
+   line-height: (--line-height);
+
+   @media ${device.tablet} {
+      font-size: var(--f-34);
+      line-height: (--line-height);
+   }
+`;
+
+export const h3_queens_med = css`
+   font-weight: 400;
+   ${f_queens_med}
+   font-size: var(--f-28);
+   line-height: (--line-height);
+
+   @media ${device.tablet} {
+      font-size: var(--f-34);
+      line-height: (--line-height);
+   }
+`;
+
+export const h3_queens_med_italic = css`
+   font-weight: 400;
+   ${f_queens_med_italic}
+   font-size: var(--f-28);
+   line-height: (--line-height);
+
+   @media ${device.tablet} {
+      font-size: var(--f-34);
+      line-height: (--line-height);
+   }
+`;
+
+export const h4_sweet = css`
+   ${p_xs}
+   ${f_sweet_bold}
+${t_uppercase}
+   font-weight: 400;
+
+   @media ${device.tablet} {
+      font-size: var(--f-14);
    }
 `;
 
@@ -208,12 +543,12 @@ export const d_none = css`
    display: none;
 `;
 
-export const d_inline_block = css`
-   display: inline-block;
-`;
-
 export const d_block = css`
    display: block;
+`;
+
+export const d_inline_block = css`
+   display: inline-block;
 `;
 
 export const d_flex = css`
@@ -225,6 +560,10 @@ export const d_flex = css`
 FLEXBOX, flex
 ------------------------------------_
 */
+
+export const flex_wrap = css`
+   flex-wrap: wrap;
+`;
 
 export const flex_wrap_row = css`
    flex-wrap: row;
@@ -468,6 +807,10 @@ export const trans_all = css`
    transition: all 0export const 3s ease;
 `;
 
+export const trans_all_ease = css`
+   transition: all 0.3s ease;
+`;
+
 export const trans_rotate = css`
    transition: all 0export const 3s ease;
    &:hover {
@@ -495,6 +838,10 @@ export const bd_radius = css`
 
 export const bd_radius_round = css`
    border-radius: 50%;
+`;
+
+export const bd_radius_lg = css`
+   border-radius: var(--bd-radius-lg);
 `;
 
 /* 
@@ -527,6 +874,7 @@ SPACINGS
 
 export const m_top_xl = css`
    margin-top: var(--pd-lg);
+   line-height: (--line-height);
 
    @media ${device.tablet} {
       margin-top: var(--pd-xl);
@@ -627,4 +975,108 @@ export const input_spacing = css`
    @media ${device.tablet} {
       padding: rem(10) rem(20);
    }
+`;
+
+export const btn_spacing = css`
+   padding: rem(13) rem(30);
+
+   @media ${device.tablet} {
+      padding: rem(15) rem(30);
+   }
+`;
+
+/* 
+------------------------------------_
+COLORS
+------------------------------------_
+*/
+
+// backgrounds
+
+export const bg_black = css`
+   background-color: var(--c-black);
+`;
+
+export const bg_white = css`
+   background-color: var(--c-white);
+`;
+
+export const bg_cream = css`
+   background-color: var(--c-cream);
+`;
+
+export const bg_yellow = css`
+   background-color: var(--c-yellow);
+`;
+
+export const bg_pink = css`
+   background-color: var(--c-pink);
+`;
+
+export const bg_burgundy = css`
+   background-color: var(--c-burgundy);
+`;
+
+export const bg_red = css`
+   background-color: var(--c-red);
+`;
+
+// border
+
+export const bd_black = css`
+   border-color: var(--c-black);
+`;
+
+export const bd_white = css`
+   border-color: var(--c-white);
+`;
+
+export const bd_cream = css`
+   border-color: var(--c-cream);
+`;
+
+export const bd_yellow = css`
+   border-color: var(--c-yellow);
+`;
+
+export const bd_pink = css`
+   border-color: var(--c-pink);
+`;
+
+export const bd_burgundy = css`
+   border-color: var(--c-burgundy);
+`;
+
+export const bd_red = css`
+   border-color: var(--c-red);
+`;
+
+// fonts
+
+export const f_black = css`
+   color: var(--c-black);
+`;
+
+export const f_white = css`
+   color: var(--c-white);
+`;
+
+export const f_cream = css`
+   color: var(--c-cream);
+`;
+
+export const f_yellow = css`
+   color: var(--c-yellow);
+`;
+
+export const f_pink = css`
+   color: var(--c-pink);
+`;
+
+export const f_burgundy = css`
+   color: var(--c-burgundy);
+`;
+
+export const f_red = css`
+   color: var(--c-red);
 `;
