@@ -1,9 +1,6 @@
 import styled from 'styled-components';
 import { Button, ButtonBurgundy, ButtonLoadMore, ButtonQuickAdd } from '@/components/Button';
-import IconsCart from './IconCart';
 import {
-   IconSearch,
-   IconProfile,
    IconSandwichMobile,
    IconClose,
    IconArrowDown,
@@ -14,7 +11,13 @@ import {
    IconReviewsMobile,
    IconReviews,
    IconSliderIndicatorFilled
-} from '@/components/Icons';
+} from '@/components/Icons/Icons';
+import { IconSearch } from './Icons/IconSearch';
+import { IconProfile } from './Icons/IconProfile';
+import IconCart from './Icons/IconCart';
+import IconCartEmpty from './Icons/IconCartEmpty';
+
+
 import {
    IconFb,
    IconFbMobile,
@@ -24,8 +27,7 @@ import {
    IconTwitterMobile,
    IconTikTok,
    IconTikTokMobile
-} from '@/components/IconsSocialMedia';
-import Logo from './Logo';
+} from '@/components/Icons/IconsSocialMedia';
 import {
    m,
    d_flex,
@@ -65,6 +67,9 @@ import {
    p_xsm,
    p_productCardSearch
 } from '@/styles/base/Utilities';
+import Logo from './Logo';
+
+
 
 export default function GeneralSetup() {
    /* Add an SEO to every page */
@@ -110,13 +115,13 @@ export default function GeneralSetup() {
          </FlexContainer>
 
          <FlexContainer>
-            <White></White>
-            <Cream></Cream>
-            <Yellow></Yellow>
-            <Pink></Pink>
-            <Burgundy></Burgundy>
-            <Red></Red>
-            <Black></Black>
+            <White/>
+            <Cream/>
+            <Yellow/>
+            <Pink/>
+            <Burgundy/>
+            <Red/>
+            <Black/>
          </FlexContainer>
 
          <BlockContainer>
@@ -129,12 +134,12 @@ export default function GeneralSetup() {
                <li>{IconProfile}</li>
                <li>{IconSandwichMobile}</li>
                <li>{IconClose}</li>
+               <li><IconCartEmpty /></li>
+               <li><IconCart /></li>
             </ul>
          </BlockContainer>
 
-         <BlockContainer>
-            <IconsCart />
-         </BlockContainer>
+    
 
          <BlockContainer>
             <ul>
