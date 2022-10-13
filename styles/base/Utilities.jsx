@@ -283,7 +283,19 @@ export const h1_queens = css`
    ${f_queens}
    font-size: var(--f-74);
    font-weight: 500;
-   line-height: (--line-height-md);
+   line-height: (--line-height-sm);
+
+   @media ${device.tablet} {
+      font-size: var(--f-140);
+      line-height: (--line-height);
+   }
+`;
+
+export const h1_queens_italic = css`
+   ${f_queens_italic}
+   font-size: var(--f-74);
+   font-weight: 500;
+   line-height: (--line-height-sm);
 
    @media ${device.tablet} {
       font-size: var(--f-140);
@@ -411,8 +423,10 @@ export const h3_queens_med_italic = css`
 export const h4_sweet = css`
    ${p_xs}
    ${f_sweet_bold}
-${t_uppercase}
+   ${t_uppercase}
    font-weight: 400;
+   letter-spacing: 0.08rem;
+   font-size: var(--f-12);
 
    @media ${device.tablet} {
       font-size: var(--f-14);
@@ -570,7 +584,8 @@ export const flex_wrap_row = css`
 `;
 
 export const flex_wrap_col = css`
-   flex-wrap: column;
+flex-direction: column;
+flex-wrap: 
 `;
 
 export const flex_justify_between = css`
@@ -811,6 +826,10 @@ export const trans_all_ease = css`
    transition: all 0.3s ease;
 `;
 
+export const trans_color_ease = css`
+   transition: color 0.3s ease;
+`;
+
 export const trans_rotate = css`
    transition: all 0export const 3s ease;
    &:hover {
@@ -843,6 +862,15 @@ export const bd_radius_round = css`
 export const bd_radius_lg = css`
    border-radius: var(--bd-radius-lg);
 `;
+
+export const bd_bottom_cream = css`
+   border-bottom: 1.5px solid var(--c-cream);
+`;
+
+export const bd_bottom_red = css`
+   border-bottom: 1.5px solid var(--c-red);
+`;
+
 
 /* 
 ------------------------------------_
@@ -1079,4 +1107,13 @@ export const f_burgundy = css`
 
 export const f_red = css`
    color: var(--c-red);
+`;
+
+
+// Link styles
+
+
+export const a_none = css`
+text-decoration: none;
+${cursor_pointer}
 `;

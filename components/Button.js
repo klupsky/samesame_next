@@ -2,7 +2,7 @@
 import styled from 'styled-components';
 // import { device } from '@/styles/BreakPoints';
 import { device } from '@/styles/BreakPoints';
-import { p_xs,
+import { 
    m,
    bg_red,
    bg_white,

@@ -38,6 +38,7 @@ const CustomStyles = createGlobalStyle`
 --line-height: 1;
 --line-height-md: 1.1;
 --line-height-sm: 0.9;
+--line-height-l: 2;
 
 /* font sizes (prefix: f) */
 --f-8: 8px;
